@@ -62,5 +62,5 @@ if __name__ == '__main__':
         result.append(test_set_transformed)
 
     # stack results if there multiple feature types  
-    main_df = pd.concat(result)
+    main_df = pd.concat(result,axis = 1)
     main_df.to_csv('output/test_proc', sep='\t')
